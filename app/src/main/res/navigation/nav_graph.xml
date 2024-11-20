@@ -12,6 +12,26 @@
         android:id = "@+id/twoFragment"
         android:name = "com.example.bfy_2024.SecondFragment"
         android:label = "TwoFragment"/>
-
-
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.bfy_2024.LoginFragment"
+        android:label="LoginFragment"/>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.bfy_2024.RegisterFragment"
+        android:label="RegistrationFragment"/>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bfy_2024.SplashFragment"
+        android:label="SpalshFragment">
+        <action
+            android:id="@+id/splash_action_loginFragment"
+            app:destination="@+id/loginFragment"/>
+        <action
+            android:id="@+id/spalsh_action_oneFragment"
+            app:destination="@+id/oneFragment"/>
+        <action
+            android:id="@+id/splash_action_registrationFragment"
+            app:destination="@+id/registrationFragment"/>
+    </fragment>>
 </navigation>
