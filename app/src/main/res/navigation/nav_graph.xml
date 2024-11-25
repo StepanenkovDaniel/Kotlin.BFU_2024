@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/oneFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id = "@+id/oneFragment"
@@ -17,9 +17,9 @@
         android:name="com.example.bfy_2024.LoginFragment"
         android:label="LoginFragment"/>
     <fragment
-        android:id="@+id/registrationFragment"
+        android:id="@+id/registrFragment"
         android:name="com.example.bfy_2024.RegisterFragment"
-        android:label="RegistrationFragment"/>
+        android:label="RegistrFragment"/>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.bfy_2024.SplashFragment"
@@ -31,7 +31,7 @@
             android:id="@+id/spalsh_action_oneFragment"
             app:destination="@+id/oneFragment"/>
         <action
-            android:id="@+id/splash_action_registrationFragment"
-            app:destination="@+id/registrationFragment"/>
+            android:id="@+id/action_splashFragment_to_registrFragment"
+            app:destination="@id/registrFragment" />
     </fragment>>
 </navigation>

@@ -19,7 +19,7 @@ class RegisterFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_registration, container, false)
+        val root = inflater.inflate(R.layout.fragment_registr, container, false)
         val navController= NavHostFragment.findNavController(this)
 
         var isOptionSelected = false //Флаг(кнопка)

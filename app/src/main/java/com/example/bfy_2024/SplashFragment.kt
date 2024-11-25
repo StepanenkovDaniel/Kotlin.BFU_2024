@@ -14,7 +14,6 @@ class SplashFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val root = inflater.inflate(R.layout.fragment_splash, container, false)
         val navController = NavHostFragment.findNavController(this)
         val SharedPreferences = requireContext().getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE)
@@ -26,7 +25,7 @@ class SplashFragment : Fragment() {
                 navController.navigate(R.id.loginFragment)
             }
         else{
-            navController.navigate(R.id.registrationFragment)
+            navController.navigate(R.id.registrFragment)
         }
         return root
     }
